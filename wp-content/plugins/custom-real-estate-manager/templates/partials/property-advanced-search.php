@@ -10,9 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// 1. Get all Districts
-$districts = get_posts( array(
-	'post_type'      => 'district',
+// 1. Get all States
+$states = get_posts( array(
+	'post_type'      => 'state',
 	'posts_per_page' => -1,
 	'post_status'    => 'publish',
 	'orderby'        => 'title',
@@ -58,13 +58,20 @@ $amenities_list = array(
 				<input type="text" id="rem-search-place" name="search" placeholder="<?php esc_attr_e( 'Search by keyword, place, landmark...', 'custom-real-estate-manager' ); ?>">
 			</div>
 
+			<!-- State Cascade -->
+			<div class="rem-search-bar-field">
+				<select id="rem-search-state" name="state_id">
+					<option value=""><?php esc_html_e( 'Select State', 'custom-real-estate-manager' ); ?></option>
+					<?php foreach ( $states as $state ) : ?>
+						<option value="<?php echo esc_attr( $state->ID ); ?>"><?php echo esc_html( $state->post_title ); ?></option>
+					<?php endforeach; ?>
+				</select>
+			</div>
+
 			<!-- District Cascade -->
 			<div class="rem-search-bar-field">
-				<select id="rem-search-district" name="district_id">
+				<select id="rem-search-district" name="district_id" disabled>
 					<option value=""><?php esc_html_e( 'Select District', 'custom-real-estate-manager' ); ?></option>
-					<?php foreach ( $districts as $district ) : ?>
-						<option value="<?php echo esc_attr( $district->ID ); ?>"><?php echo esc_html( $district->post_title ); ?></option>
-					<?php endforeach; ?>
 				</select>
 			</div>
 
@@ -213,14 +220,22 @@ $amenities_list = array(
 					<input type="text" id="rem-mob-search" name="search" placeholder="<?php esc_attr_e( 'Search by keyword, place, landmark...', 'custom-real-estate-manager' ); ?>">
 				</div>
 
+				<!-- State Cascade -->
+				<div class="rem-mobile-group">
+					<label><?php esc_html_e( 'State', 'custom-real-estate-manager' ); ?></label>
+					<select id="rem-mob-state" name="state_id">
+						<option value=""><?php esc_html_e( 'Select State', 'custom-real-estate-manager' ); ?></option>
+						<?php foreach ( $states as $state ) : ?>
+							<option value="<?php echo esc_attr( $state->ID ); ?>"><?php echo esc_html( $state->post_title ); ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+
 				<!-- District Cascade -->
 				<div class="rem-mobile-group">
 					<label><?php esc_html_e( 'District', 'custom-real-estate-manager' ); ?></label>
-					<select id="rem-mob-district" name="district_id">
+					<select id="rem-mob-district" name="district_id" disabled>
 						<option value=""><?php esc_html_e( 'Select District', 'custom-real-estate-manager' ); ?></option>
-						<?php foreach ( $districts as $district ) : ?>
-							<option value="<?php echo esc_attr( $district->ID ); ?>"><?php echo esc_html( $district->post_title ); ?></option>
-						<?php endforeach; ?>
 					</select>
 				</div>
 

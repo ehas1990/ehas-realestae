@@ -95,7 +95,9 @@ $property_types = array(
 		<!-- Location Place Selection -->
 		<div class="rem-filter-group">
 			<label for="rem-place"><?php esc_html_e( 'Location', 'custom-real-estate-manager' ); ?></label>
-			<input type="text" id="rem-place" name="place_name" placeholder="<?php esc_attr_e( 'e.g. Kottakkal', 'custom-real-estate-manager' ); ?>">
+			<select id="rem-place" name="place_id" disabled>
+				<option value=""><?php esc_html_e( 'Select Location', 'custom-real-estate-manager' ); ?></option>
+			</select>
 		</div>
 
 		<!-- Property Type Selection -->
@@ -134,6 +136,45 @@ $property_types = array(
 					<input type="number" id="rem-max-price" name="max_price" placeholder="<?php esc_attr_e( 'Max Price', 'custom-real-estate-manager' ); ?>" min="0">
 				</div>
 			</div>
+		</div>
+
+		<!-- Area Size Selection -->
+		<div class="rem-filter-group area-range-group">
+			<label><?php esc_html_e( 'Area Range (Sq Ft)', 'custom-real-estate-manager' ); ?></label>
+			<div class="rem-range-inputs">
+				<div class="rem-input-wrap">
+					<input type="number" id="rem-min-area" name="min_area" placeholder="<?php esc_attr_e( 'Min Area', 'custom-real-estate-manager' ); ?>" min="0">
+				</div>
+				<div class="rem-range-divider">-</div>
+				<div class="rem-input-wrap">
+					<input type="number" id="rem-max-area" name="max_area" placeholder="<?php esc_attr_e( 'Max Area', 'custom-real-estate-manager' ); ?>" min="0">
+				</div>
+			</div>
+		</div>
+
+		<!-- Bedrooms Selection -->
+		<div class="rem-filter-group">
+			<label for="rem-bedrooms"><?php esc_html_e( 'Min Bedrooms', 'custom-real-estate-manager' ); ?></label>
+			<select id="rem-bedrooms" name="bedrooms">
+				<option value=""><?php esc_html_e( 'Any BHK', 'custom-real-estate-manager' ); ?></option>
+				<option value="1">1+ BHK</option>
+				<option value="2">2+ BHK</option>
+				<option value="3">3+ BHK</option>
+				<option value="4">4+ BHK</option>
+				<option value="5">5+ BHK</option>
+			</select>
+		</div>
+
+		<!-- Bathrooms Selection -->
+		<div class="rem-filter-group">
+			<label for="rem-bathrooms"><?php esc_html_e( 'Min Bathrooms', 'custom-real-estate-manager' ); ?></label>
+			<select id="rem-bathrooms" name="bathrooms">
+				<option value=""><?php esc_html_e( 'Any Bathrooms', 'custom-real-estate-manager' ); ?></option>
+				<option value="1">1+</option>
+				<option value="2">2+</option>
+				<option value="3">3+</option>
+				<option value="4">4+</option>
+			</select>
 		</div>
 
 		<!-- Reset Buttons -->

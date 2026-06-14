@@ -165,12 +165,31 @@
 	 * AJAX cascading location selection (State -> District -> Taluk)
 	 */
 	function initLocationCascades() {
-		// When State changes: Load Districts (only on property submit form)
-		$('#prop-state').on('change', function() {
+		// When State changes: Load Districts
+		$('#rem-search-state, #rem-mob-state, #rem-state, #prop-state').on('change', function() {
+			var id = $(this).attr('id');
 			var stateId = $(this).val();
-			var $district = $('#prop-district');
-			var $taluk = $('#prop-taluk');
-			var $place = $('#prop-place');
+			var $district;
+			var $taluk;
+			var $place;
+
+			if (id === 'rem-search-state') {
+				$district = $('#rem-search-district');
+				$taluk = $('#rem-search-taluk');
+				$place = $('#rem-search-location');
+			} else if (id === 'rem-mob-state') {
+				$district = $('#rem-mob-district');
+				$taluk = $('#rem-mob-taluk');
+				$place = $('#rem-mob-location');
+			} else if (id === 'rem-state') {
+				$district = $('#rem-district');
+				$taluk = $('#rem-taluk');
+				$place = $('#rem-place');
+			} else {
+				$district = $('#prop-district');
+				$taluk = $('#prop-taluk');
+				$place = $('#prop-place');
+			}
 
 			resetSelect($district, 'Select District');
 			resetSelect($taluk, 'Select Taluk');
@@ -181,8 +200,8 @@
 			loadLocationOptions(stateId, 'district', $district, 'Select District');
 		});
 
-		// When District changes: Load Taluks (handles filters, mobile filters, and property submit form)
-		$('#rem-search-district, #rem-mob-district, #prop-district').on('change', function() {
+		// When District changes: Load Taluks
+		$('#rem-search-district, #rem-mob-district, #rem-district, #prop-district').on('change', function() {
 			var id = $(this).attr('id');
 			var districtId = $(this).val();
 			var $taluk;
@@ -194,6 +213,9 @@
 			} else if (id === 'rem-mob-district') {
 				$taluk = $('#rem-mob-taluk');
 				$place = $('#rem-mob-location');
+			} else if (id === 'rem-district') {
+				$taluk = $('#rem-taluk');
+				$place = $('#rem-place');
 			} else {
 				$taluk = $('#prop-taluk');
 				$place = $('#prop-place');
@@ -207,8 +229,8 @@
 			loadLocationOptions(districtId, 'taluk', $taluk, 'Select Taluk');
 		});
 
-		// When Taluk changes: Load Locations (handles filters, mobile filters, and property submit form)
-		$('#rem-search-taluk, #rem-mob-taluk, #prop-taluk').on('change', function() {
+		// When Taluk changes: Load Locations
+		$('#rem-search-taluk, #rem-mob-taluk, #rem-taluk, #prop-taluk').on('change', function() {
 			var id = $(this).attr('id');
 			var talukId = $(this).val();
 			var $place;
@@ -217,6 +239,8 @@
 				$place = $('#rem-search-location');
 			} else if (id === 'rem-mob-taluk') {
 				$place = $('#rem-mob-location');
+			} else if (id === 'rem-taluk') {
+				$place = $('#rem-place');
 			} else {
 				$place = $('#prop-place');
 			}
@@ -321,7 +345,7 @@
 			var $target = $targetForm.find('[name="' + name + '"]');
 			if ($target.length && $target.val() !== val) {
 				$target.val(val);
-				if ($target.is('select') && (name === 'district_id' || name === 'taluk_id')) {
+				if ($target.is('select') && (name === 'state_id' || name === 'district_id' || name === 'taluk_id')) {
 					// We need to trigger change but avoid infinite loops
 					// Triggering change allows cascading select to query next child
 					$target.trigger('change');
@@ -404,11 +428,13 @@
 		$('#rem-adv-reset-btn').on('click', function() {
 			$advForm[0].reset();
 			$advForm.find('.active').removeClass('active');
+			resetSelect($('#rem-search-district'), 'Select District');
 			resetSelect($('#rem-search-taluk'), 'Select Taluk');
 			resetSelect($('#rem-search-location'), 'Select Location');
 
 			$mobForm[0].reset();
 			$mobForm.find('.active').removeClass('active');
+			resetSelect($('#rem-mob-district'), 'Select District');
 			resetSelect($('#rem-mob-taluk'), 'Select Taluk');
 			resetSelect($('#rem-mob-location'), 'Select Location');
 
@@ -419,11 +445,13 @@
 		$('#rem-mobile-reset-btn').on('click', function() {
 			$mobForm[0].reset();
 			$mobForm.find('.active').removeClass('active');
+			resetSelect($('#rem-mob-district'), 'Select District');
 			resetSelect($('#rem-mob-taluk'), 'Select Taluk');
 			resetSelect($('#rem-mob-location'), 'Select Location');
 
 			$advForm[0].reset();
 			$advForm.find('.active').removeClass('active');
+			resetSelect($('#rem-search-district'), 'Select District');
 			resetSelect($('#rem-search-taluk'), 'Select Taluk');
 			resetSelect($('#rem-search-location'), 'Select Location');
 
@@ -440,8 +468,8 @@
 	function setupLegacyFilters($form) {
 		var debounceTimer = null;
 
-		// 1. Text Search & Place Keyup (Debounced 400ms)
-		$('#rem-search, #rem-place').on('keyup input', function() {
+		// 1. Text Search Keyup (Debounced 400ms)
+		$('#rem-search').on('keyup input', function() {
 			clearTimeout(debounceTimer);
 			debounceTimer = setTimeout(function() {
 				triggerFilterQuery(1);
@@ -453,8 +481,8 @@
 			triggerFilterQuery(1);
 		});
 
-		// 3. Price inputs (debounced on keyup/change)
-		$('#rem-min-price, #rem-max-price').on('keyup change input', function() {
+		// 3. Price and Area inputs (debounced on keyup/change)
+		$('#rem-min-price, #rem-max-price, #rem-min-area, #rem-max-area').on('keyup change input', function() {
 			clearTimeout(debounceTimer);
 			debounceTimer = setTimeout(function() {
 				triggerFilterQuery(1);
@@ -466,6 +494,7 @@
 			$form[0].reset();
 			resetSelect($('#rem-district'), 'Select District');
 			resetSelect($('#rem-taluk'), 'Select Taluk');
+			resetSelect($('#rem-place'), 'Select Location');
 			triggerFilterQuery(1);
 		});
 
@@ -526,6 +555,7 @@
 		var $advForm = $('#rem-adv-search-form');
 		if ($advForm.length) {
 			data.search = $advForm.find('[name="search"]').val();
+			data.state_id = $advForm.find('[name="state_id"]').val();
 			data.district_id = $advForm.find('[name="district_id"]').val();
 			data.taluk_id = $advForm.find('[name="taluk_id"]').val();
 			data.place_id = $advForm.find('[name="place_id"]').val();
@@ -559,11 +589,15 @@
 			data.state_id = $('#rem-state').val();
 			data.district_id = $('#rem-district').val();
 			data.taluk_id = $('#rem-taluk').val();
-			data.place_name = $('#rem-place').val();
+			data.place_id = $('#rem-place').val();
 			data.property_type = $('#rem-type').val();
 			data.status = $('#rem-status').val();
 			data.min_price = $('#rem-min-price').val();
 			data.max_price = $('#rem-max-price').val();
+			data.min_area = $('#rem-min-area').val();
+			data.max_area = $('#rem-max-area').val();
+			data.bedrooms = $('#rem-bedrooms').val();
+			data.bathrooms = $('#rem-bathrooms').val();
 		}
 
 		$.ajax({
