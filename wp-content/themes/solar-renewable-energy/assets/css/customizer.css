@@ -1,0 +1,225 @@
+/*Cutomizer CSS*/
+#accordion-section-solar_renewable_energy_pro h3.accordion-section-title,
+#customize-controls #accordion-section-solar_renewable_energy_pro .accordion-section-title button:focus,
+#customize-controls #accordion-section-solar_renewable_energy_pro .accordion-section-title:focus, 
+#customize-controls #accordion-section-solar_renewable_energy_pro .accordion-section-title:hover, 
+#customize-controls #accordion-section-solar_renewable_energy_pro.open .accordion-section-title, 
+#customize-controls #accordion-section-solar_renewable_energy_pro:hover>.accordion-section-title,
+#customize-controls #accordion-section-solar_renewable_energy_pro .accordion-section-title button:hover{
+  background: #2B136B;
+  color:#fff;
+  border-left-color:#2B136B;
+  font-size: 12px;
+}
+#customize-theme-controls #accordion-section-solar_renewable_energy_pro .accordion-section-title:after{
+  color:#fff;
+}
+
+/* Premium Features Section Styling */
+#accordion-section-solar_renewable_energy_premium_features_section h3.accordion-section-title,
+#customize-controls #accordion-section-solar_renewable_energy_premium_features_section .accordion-section-title button:focus,
+#customize-controls #accordion-section-solar_renewable_energy_premium_features_section .accordion-section-title:focus, 
+#customize-controls #accordion-section-solar_renewable_energy_premium_features_section .accordion-section-title:hover, 
+#customize-controls #accordion-section-solar_renewable_energy_premium_features_section.open .accordion-section-title, 
+#customize-controls #accordion-section-solar_renewable_energy_premium_features_section:hover>.accordion-section-title,
+#customize-controls #accordion-section-solar_renewable_energy_premium_features_section .accordion-section-title button:hover{
+  background: #2B136B;
+  color:#fff;
+  border-left-color:#2B136B;
+  font-size: 12px;
+}
+#customize-theme-controls #accordion-section-solar_renewable_energy_premium_features_section .accordion-section-title:after{
+  color:#fff;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.upsell-btn > .btn-success {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.upsell-btn{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: #2B136B;
+}
+.upsell-btn-bottom{
+  margin-top:20px;
+}
+
+/*Custom head*/
+span.title.head-customize-control-title {
+  padding: 10px;
+  background-color: #EFF9FF;
+  border: 1px solid #D6F0FF;
+  border-radius: 0;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom:5px;
+  text-transform: capitalize;
+  color: #111213;
+}
+li.customize-control {
+    border-bottom: 1px solid #ddd;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 0 !important;
+}
+li.customize-control-section {
+    padding: 0 !important;
+    border: none !important;
+}
+.head-customize-section-description.cus-head{
+  margin-top: 22px; 
+}
+li.customize-section-description-container.section-meta {
+    margin-bottom: 0;
+}
+.customize-control-title{
+  color: #111213;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.customize-pane-parent button.accordion-trigger{
+  position: relative;
+  padding-left: 30px !important;
+}
+.customize-pane-parent #accordion-section-solar_renewable_energy_pro button.accordion-trigger{
+  padding-left: 10px !important;
+}
+.customize-pane-parent .control-section .accordion-trigger:before{
+  font-family: dashicons;
+  content: "\f103";
+  font-size: 18px;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: 5px;
+}
+
+#accordion-section-solar_renewable_energy_pro .accordion-trigger:before{
+  content: none;
+}
+#accordion-panel-solar_renewable_energy_custompage_panel .accordion-trigger:before {
+  content: "\f102";
+}
+#accordion-section-colors .accordion-trigger:before {
+  content: "\f309";
+}
+#accordion-section-solar_renewable_energy_typography_settings .accordion-trigger:before {
+  content: "\f464";
+}
+#accordion-section-solar_renewable_energy_theme_settings .accordion-trigger:before {
+  content: "\f111";
+}
+#accordion-section-solar_renewable_energy_mobile_options .accordion-trigger:before {
+  content: "\f470";
+}
+#accordion-panel-solar_renewable_energy_post_panel .accordion-trigger:before {
+  content: "\f109";
+}
+#accordion-section-static_front_page .accordion-trigger:before {
+  content: "\f319";
+}
+#accordion-panel-widgets .accordion-trigger:before {
+  content: "\f116";
+}
+#accordion-section-custom_css .accordion-trigger:before {
+  content: "\f499";
+}
+#accordion-panel-nav_menus .accordion-trigger:before {
+  content: "\f333";
+}
+#accordion-section-header_image .accordion-trigger:before {
+  content: "\f13d";
+}
+
+#accordion-section-background_image .accordion-trigger:before {
+  content: "\f128";
+}
+
+#accordion-section-title_tagline .accordion-trigger:before {
+  content: "\f115";
+}
+.customize-control .wp-picker-container {
+    position: static;
+}
+.customize-control .wp-picker-container .wp-color-result.button {
+  position: absolute !important;
+  right: 15px !important;
+  top: 15px !important;
+  border-radius: 100% !important;
+  min-height: 0 !important;
+  height: 28px !important;
+  width: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 1px solid #CCC !important;
+  background-color: transparent;
+}
+.customize-control-color{
+    position: relative;
+}
+.customize-control .wp-picker-container .wp-color-result.button .wp-color-result-text {
+    display: none;
+}
+.customize-control .wp-picker-container .wp-color-result.button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAAHnlligAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHJJREFUeNpi+P///4EDBxiAGMgCCCAGFB5AADGCRBgYDh48CCRZIJS9vT2QBAggFBkmBiSAogxFBiCAoHogAKIKAlBUYTELAiAmEtABEECk20G6BOmuIl0CIMBQ/IEMkO0myiSSraaaBhZcbkUOs0HuBwDplz5uFJ3Z4gAAAABJRU5ErkJggg==);
+}
+.customize-control .wp-picker-container .wp-color-result.button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: inherit;
+    border: 0;
+}
+.customize-control .wp-picker-container .wp-color-result.wp-picker-open + .wp-picker-input-wrap {
+  display: flex;
+  vertical-align: top;
+  background: #FFF;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #dcdcde;
+}
+.customize-control .wp-picker-container .wp-picker-input-wrap label {
+  flex-grow: 1;
+}
+.customize-control .wp-picker-container .wp-picker-input-wrap label input {
+  width: 100% !important;
+}
+
+#customize-control-solar_renewable_energy_reset_colors{
+  position: relative !important;
+}
+.color-reset-btn{
+  font-size: 14px !important;
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+  padding: 0 5px !important;
+  line-height: 1.5 !important;
+  min-height: auto !important;
+}

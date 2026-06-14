@@ -1,0 +1,50 @@
+  /* ==========================================================================
+   sortable control
+   ========================================================================== */
+.customize-control-organic-farm-sortable .sortable {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.customize-control-organic-farm-sortable .sortable li {
+    background: #fff;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    border: 1px solid #c3c4c7;
+}
+.customize-control-organic-farm-sortable .sortable .visibility {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    border-right: 1px solid #c3c4c7;
+    margin: 0;
+    padding: 5px 8px;
+}
+.customize-control-organic-farm-sortable .sortable li span {
+    white-space: nowrap;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.customize-control-organic-farm-sortable .sortable li.invisible {
+    background: #f1f1f1;
+    border: 1px dashed #c3c4c7;
+}
+
+.customize-control-organic-farm-sortable .customize-control-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.customize-control-organic-farm-sortable .customize-control-description {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}

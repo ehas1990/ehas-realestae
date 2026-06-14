@@ -1,0 +1,312 @@
+# Copyright (C) 2026 pewilliams
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Solar Renewable Energy 5.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/solar-renewable-energy\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-29T07:38:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: solar-renewable-energy\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Solar Renewable Energy"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.ovationthemes.com/products/free-solar-energy-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Solar Renewable Energy is a theme for everyone who is in the field of solar solutions, green energy, sustainability, clean power, eco-friendly initiatives, energy efficiency, photovoltaic systems, renewable resources, climate action, energy management, environmental impact, solar panels, power generation, energy savings, and sustainable business under the solar renewable energy framework. This is a multipurpose theme with strong flexibility, making it suitable for environmental and organic websites, as well as eco-friendly power services and environment protection agencies to showcase their products and services effectively. Through social media integration, users can promote their offerings and reach a wider audience. The theme includes customization options where users can change background colors or enable/disable sections as needed. It also provides a balanced color palette of bright and dark tones to match different branding styles. Designed to support solar farm websites and related eco industries, it is fully responsive and multilingual, making it suitable for global clients and sustainable business growth."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "pewilliams"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.ovationthemes.com/"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:22
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:27
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:72
+msgid "https://wordpress.org/support/theme/solar-renewable-energy"
+msgstr ""
+
+#: functions.php:75
+msgid "https://wordpress.org/support/theme/solar-renewable-energy/reviews/#new-post"
+msgstr ""
+
+#: functions.php:78
+msgid "https://trial.ovationthemes.com/solar-renewable-energy/"
+msgstr ""
+
+#: functions.php:81
+msgid "https://www.ovationthemes.com/products/solar-wordpress-theme"
+msgstr ""
+
+#: functions.php:84
+msgid "https://trial.ovationthemes.com/docs/ot-solar-renewable-energy-pro-doc/"
+msgstr ""
+
+#: functions.php:87
+msgid "https://trial.ovationthemes.com/docs/ot-solar-renewable-energy-free-doc/"
+msgstr ""
+
+#: functions.php:90
+msgid "Premium Solar Theme"
+msgstr ""
+
+#: functions.php:113
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:115
+#: functions.php:135
+msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr ""
+
+#: functions.php:123
+msgid "Page Sidebar"
+msgstr ""
+
+#: functions.php:125
+msgid "Add widgets here to appear in your pages and posts"
+msgstr ""
+
+#: functions.php:133
+msgid "Sidebar 3"
+msgstr ""
+
+#: functions.php:143
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:145
+#: functions.php:155
+#: functions.php:165
+#: functions.php:175
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: functions.php:153
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:163
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:173
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:221
+msgid "🔒 Unlock Premium Features"
+msgstr ""
+
+#: functions.php:229
+msgid "SOLAR ENERGY PREMIUM"
+msgstr ""
+
+#: functions.php:244
+msgid "Slider Title Color"
+msgstr ""
+
+#: functions.php:265
+msgid "Show Hide excerpt"
+msgstr ""
+
+#: functions.php:267
+#: functions.php:347
+msgid "On"
+msgstr ""
+
+#: functions.php:268
+#: functions.php:348
+msgid "Off"
+msgstr ""
+
+#: functions.php:282
+msgid "Slider Excerpt Color"
+msgstr ""
+
+#: functions.php:292
+msgid "Slider Opacity"
+msgstr ""
+
+#: functions.php:296
+msgid "0"
+msgstr ""
+
+#: functions.php:297
+msgid "0.1"
+msgstr ""
+
+#: functions.php:298
+msgid "0.2"
+msgstr ""
+
+#: functions.php:299
+msgid "0.3"
+msgstr ""
+
+#: functions.php:300
+msgid "0.4"
+msgstr ""
+
+#: functions.php:301
+msgid "0.5"
+msgstr ""
+
+#: functions.php:302
+msgid "0.6"
+msgstr ""
+
+#: functions.php:303
+msgid "0.7"
+msgstr ""
+
+#: functions.php:304
+msgid "0.8"
+msgstr ""
+
+#: functions.php:305
+msgid "0.9"
+msgstr ""
+
+#: functions.php:306
+msgid "1"
+msgstr ""
+
+#: functions.php:313
+#: functions.php:323
+msgid "Category Section"
+msgstr ""
+
+#: functions.php:345
+msgid "Check To Show Section"
+msgstr ""
+
+#: functions.php:359
+msgid "Section Title"
+msgstr ""
+
+#: functions.php:382
+msgid "Select Category to display Post"
+msgstr ""
+
+#: functions.php:391
+msgid "Number of post to show in a category"
+msgstr ""
+
+#: functions.php:402
+msgid "Post Order"
+msgstr ""
+
+#: functions.php:405
+msgid "Oldest to Newest"
+msgstr ""
+
+#: functions.php:406
+msgid "Newest to Oldest"
+msgstr ""
+
+#: functions.php:407
+msgid "A&rarr;Z"
+msgstr ""
+
+#: functions.php:408
+msgid "Z&rarr;A"
+msgstr ""
+
+#: functions.php:417
+msgid "Copyright Text"
+msgstr ""
+
+#: functions.php:436
+msgid "Theme Color"
+msgstr ""
+
+#: functions.php:453
+msgid "Solar Renewable Energy WordPress Theme"
+msgstr ""
+
+#: functions.php:456
+msgid " By Ovation Themes"
+msgstr ""
+
+#: inc/dashboard/setup.php:132
+msgid "Home"
+msgstr ""
+
+#: inc/dashboard/setup.php:140
+msgid "Pages"
+msgstr ""
+
+#: inc/dashboard/setup.php:148
+msgid "Page Left Sidebar"
+msgstr ""
+
+#: inc/dashboard/setup.php:157
+msgid "Page Right Sidebar"
+msgstr ""
+
+#: inc/dashboard/setup.php:165
+msgid "Quality"
+msgstr ""
+
+#: inc/dashboard/setup.php:172
+msgid "Categories"
+msgstr ""
+
+#: inc/dashboard/setup.php:179
+msgid "Top Brands"
+msgstr ""
+
+#: inc/dashboard/setup.php:186
+msgid "About"
+msgstr ""
+
+#: inc/dashboard/setup.php:193
+msgid "Blog"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Custom Home Page"
+msgstr ""
+
+#: page-template/custom-home-page.php:49
+msgid "Read More"
+msgstr ""

@@ -1,0 +1,670 @@
+# Copyright (C) 2026 WP Radiant
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Packers Logistic 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/packers-logistic\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-25T14:56:52+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: packers-logistic\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Packers Logistic"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.wpradiant.net/products/packers-logistic"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Packers Logistic is a purpose-driven theme tailored for transportation, cargo, and relocation businesses that require a structured and functional website. It is well-suited for logistics companies, moving services, freight agencies, courier services, and warehouse operations aiming to present their offerings with clarity. The layout is designed to highlight essential elements such as service listings, shipment tracking sections, quote request forms, and contact information without unnecessary clutter. Built with performance in mind, the theme supports fast loading and integrates smoothly with essential plugins, making it reliable for shipping companies and supply chain businesses. It includes flexible customization options, organized typography, and intuitive navigation to help users align the website with their brand identity. Packers Logistic provides a practical framework for displaying services, operational areas, pricing details, and logistics solutions in a clean and accessible format."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "WP Radiant"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.wpradiant.net/"
+msgstr ""
+
+#: inc/block-pattern.php:61
+msgid "Packers Logistic Patterns"
+msgstr ""
+
+#: inc/block-style.php:28
+msgid "Borders"
+msgstr ""
+
+#: patterns/404-page.php
+msgctxt "Pattern title"
+msgid "404 Page"
+msgstr ""
+
+#: patterns/404-page.php:11
+msgid "404 Page"
+msgstr ""
+
+#: patterns/404-page.php:14
+msgid "404"
+msgstr ""
+
+#: patterns/404-page.php:18
+msgid "Unfortunately we can’t find that page."
+msgstr ""
+
+#: patterns/404-page.php:22
+msgid "The page you are looking for doesnt exist or has been moved. Try another url or go to the site homepage."
+msgstr ""
+
+#: patterns/banner.php
+msgctxt "Pattern title"
+msgid "Banner"
+msgstr ""
+
+#: patterns/banner.php:11
+msgid "Banner"
+msgstr ""
+
+#: patterns/banner.php:17
+#: patterns/banner.php:45
+#: patterns/banner.php:73
+msgid "We Provide Best Services"
+msgstr ""
+
+#: patterns/banner.php:21
+#: patterns/banner.php:49
+#: patterns/banner.php:77
+msgid "Moving Company That Provides Fast And Secure Moving Services"
+msgstr ""
+
+#: patterns/banner.php:25
+#: patterns/banner.php:53
+#: patterns/banner.php:81
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text."
+msgstr ""
+
+#: patterns/banner.php:30
+#: patterns/banner.php:58
+#: patterns/banner.php:86
+#: patterns/header-default.php:85
+msgid "Learn More"
+msgstr ""
+
+#: patterns/faq-section.php
+msgctxt "Pattern title"
+msgid "FAQ Section"
+msgstr ""
+
+#: patterns/faq-section.php:11
+msgid "FAQ Section"
+msgstr ""
+
+#: patterns/faq-section.php:18
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: patterns/faq-section.php:22
+msgid "Have Any Questions For Us?"
+msgstr ""
+
+#: patterns/faq-section.php:26
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+msgstr ""
+
+#: patterns/faq-section.php:36
+msgid "What services do packers and movers provide?"
+msgstr ""
+
+#: patterns/faq-section.php:37
+#: patterns/faq-section.php:43
+#: patterns/faq-section.php:49
+#: patterns/faq-section.php:55
+#: patterns/faq-section.php:61
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown prfira-sans took a galley of type and scrambled it to make a type specimen book."
+msgstr ""
+
+#: patterns/faq-section.php:42
+msgid "How do you calculate the moving cost?"
+msgstr ""
+
+#: patterns/faq-section.php:48
+msgid "Do you provide packing materials?"
+msgstr ""
+
+#: patterns/faq-section.php:54
+msgid "Will you unpack my items at the destination?"
+msgstr ""
+
+#: patterns/faq-section.php:60
+msgid "Can you move fragile or valuable items?"
+msgstr ""
+
+#: patterns/footer-default.php
+msgctxt "Pattern title"
+msgid "Footer Default"
+msgstr ""
+
+#: patterns/footer-default.php:11
+msgid "Footer Default"
+msgstr ""
+
+#: patterns/footer-default.php:19
+msgid "Lorem Ipsumis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text"
+msgstr ""
+
+#: patterns/footer-default.php:35
+msgid "Services"
+msgstr ""
+
+#: patterns/footer-default.php:56
+msgid "Company"
+msgstr ""
+
+#: patterns/footer-default.php:72
+msgid "Contact Information"
+msgstr ""
+
+#: patterns/footer-default.php:76
+msgid "+1234567890"
+msgstr ""
+
+#: patterns/footer-default.php:80
+msgid "example@example.com"
+msgstr ""
+
+#: patterns/footer-default.php:84
+msgid "123 Glassford Street New York, USA"
+msgstr ""
+
+#: patterns/footer-default.php:94
+msgid "Packers Logistic By"
+msgstr ""
+
+#: patterns/footer-default.php:94
+msgid " WP Radiant"
+msgstr ""
+
+#: patterns/footer-default.php:94
+msgid " | Proudly powered by "
+msgstr ""
+
+#: patterns/footer-default.php:94
+msgid "  WordPress"
+msgstr ""
+
+#: patterns/header-default.php
+msgctxt "Pattern title"
+msgid "Header Default"
+msgstr ""
+
+#: patterns/header-default.php:11
+msgid "Header Default"
+msgstr ""
+
+#: patterns/header-default.php:30
+msgid " pakers&movers@example.com"
+msgstr ""
+
+#: patterns/header-default.php:34
+msgid "  +12345678901"
+msgstr ""
+
+#: patterns/header-default.php:38
+msgid " Helios Tower 75 Tam Trinh Hoang- brazil"
+msgstr ""
+
+#: patterns/news-section.php
+msgctxt "Pattern title"
+msgid "News Section"
+msgstr ""
+
+#: patterns/news-section.php:11
+msgid "News Section"
+msgstr ""
+
+#: patterns/news-section.php:19
+msgid "News & Blogs"
+msgstr ""
+
+#: patterns/news-section.php:23
+msgid "Our Latest News & blogs"
+msgstr ""
+
+#: patterns/primary-sidebar.php
+msgctxt "Pattern title"
+msgid "Primary Sidebar"
+msgstr ""
+
+#: patterns/primary-sidebar.php:11
+msgid "Sidebar Section"
+msgstr ""
+
+#: patterns/primary-sidebar.php:17
+msgid "Search"
+msgstr ""
+
+#: patterns/primary-sidebar.php:29
+msgid "Latest Posts"
+msgstr ""
+
+#: patterns/primary-sidebar.php:55
+msgid "Archieve"
+msgstr ""
+
+#: patterns/primary-sidebar.php:67
+msgid "Category"
+msgstr ""
+
+#: patterns/primary-sidebar.php:79
+msgid "Social"
+msgstr ""
+
+#: patterns/project-section.php
+msgctxt "Pattern title"
+msgid "Project Section"
+msgstr ""
+
+#: patterns/project-section.php:10
+msgid "Project Section"
+msgstr ""
+
+#: patterns/project-section.php:31
+msgid "20 Year"
+msgstr ""
+
+#: patterns/project-section.php:35
+msgid "Experience"
+msgstr ""
+
+#: patterns/project-section.php:42
+msgid "About Us"
+msgstr ""
+
+#: patterns/project-section.php:46
+msgid "I’m A Business Strategist Turned Soulful Entrepreneur And Coach"
+msgstr ""
+
+#: patterns/project-section.php:50
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus et metus augue. Mauris ut libero eget.Lorem ipsum dolor sit amet, consectetur adipisce elit. Phasellus et metus augue. Mauris ut libero eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus et metus augue. Mauris ut libero eget.Lorem ipsum dolor sit amet, consectetur adipisce elit. Phasellus et metus augue.Mauris ut libero eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus et metus augue. Mauris ut libero eget.Lorem ipsum dolor sit amet, consectetur adipisce elit. Phasellus et metus augue"
+msgstr ""
+
+#: patterns/project-section.php:61
+msgid "Smith Shah"
+msgstr ""
+
+#: patterns/project-section.php:65
+msgid "GENERAL MANAGER"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern title"
+msgid "Search Page"
+msgstr ""
+
+#: patterns/search.php:11
+msgid "Search Page"
+msgstr ""
+
+#: patterns/testimonials-section.php
+msgctxt "Pattern title"
+msgid "Testimonials Section"
+msgstr ""
+
+#: patterns/testimonials-section.php:11
+msgid "Testimonials Section"
+msgstr ""
+
+#: patterns/testimonials-section.php:19
+msgid "Testimonials"
+msgstr ""
+
+#: patterns/testimonials-section.php:23
+msgid "What Say Clients"
+msgstr ""
+
+#: patterns/testimonials-section.php:44
+#: patterns/testimonials-section.php:58
+#: patterns/testimonials-section.php:72
+#: patterns/testimonials-section.php:86
+#: patterns/testimonials-section.php:100
+#: patterns/testimonials-section.php:114
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+msgstr ""
+
+#: patterns/testimonials-section.php:48
+msgid "Jean Kalvin"
+msgstr ""
+
+#: patterns/testimonials-section.php:52
+#: patterns/testimonials-section.php:80
+msgid "Manager"
+msgstr ""
+
+#: patterns/testimonials-section.php:62
+msgid "John Doe"
+msgstr ""
+
+#: patterns/testimonials-section.php:66
+msgid "Project Manager"
+msgstr ""
+
+#: patterns/testimonials-section.php:76
+msgid "Jane Smith"
+msgstr ""
+
+#: patterns/testimonials-section.php:90
+#: patterns/testimonials-section.php:118
+msgid "Ankit Mehta"
+msgstr ""
+
+#: patterns/testimonials-section.php:94
+msgid "Operations Manager"
+msgstr ""
+
+#: patterns/testimonials-section.php:104
+msgid "Amit Verma"
+msgstr ""
+
+#: patterns/testimonials-section.php:108
+msgid "CEO"
+msgstr ""
+
+#: patterns/testimonials-section.php:122
+msgid "Team Lead"
+msgstr ""
+
+#: styles/brown.json
+msgctxt "Style variation name"
+msgid "Brown"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secaccent"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "Thirdaccent"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "Fourground"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secbackground"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "primary"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: styles/brown.json
+#: styles/green.json
+#: styles/lightgreen.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/red.json
+#: theme.json
+msgctxt "Color name"
+msgid "tertiary"
+msgstr ""
+
+#: styles/green.json
+msgctxt "Style variation name"
+msgid "Green"
+msgstr ""
+
+#: styles/lightgreen.json
+msgctxt "Style variation name"
+msgid "lightgreen"
+msgstr ""
+
+#: styles/orange.json
+msgctxt "Style variation name"
+msgid "Orange"
+msgstr ""
+
+#: styles/purple.json
+msgctxt "Style variation name"
+msgid "Purple"
+msgstr ""
+
+#: styles/red.json
+msgctxt "Style variation name"
+msgid "Red"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar Products"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Grid Layout(Archieve posts)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single post (No Sidebar)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "primary and background"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "primary and secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "primary and tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary and background"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary and secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary and tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical secondary to tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical secondary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical tertiary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal primary to primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal secondary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal background to secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal tertiary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal background to tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Playfair Display"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Fira Sans"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Tiny"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Upper Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Normal"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Content Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra large (Recent Post Title)"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge (Display)"
+msgstr ""
