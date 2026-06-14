@@ -1,0 +1,894 @@
+{
+    "key": "group_property_details",
+    "title": "Property Details",
+    "local": "php",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "property"
+            }
+        ]
+    ],
+    "fields": {
+        "tab_basic_info": {
+            "key": "tab_basic_info",
+            "name": "",
+            "type": "tab",
+            "parent": "group_property_details",
+            "label": "<span class=\"dashicons dashicons-admin-home\"></span> Property Information",
+            "menu_order": 0
+        },
+        "accordion_basic_info": {
+            "key": "accordion_basic_info",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "General Details",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 1
+        },
+        "field_property_title": {
+            "key": "field_property_title",
+            "name": "property_title",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Property Title",
+            "required": 1,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 2
+        },
+        "field_property_id": {
+            "key": "field_property_id",
+            "name": "property_id",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Property ID",
+            "instructions": "Auto-generated on save.",
+            "readonly": 1,
+            "placeholder": "PROP-XXXX",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 3
+        },
+        "field_property_status": {
+            "key": "field_property_status",
+            "name": "property_status",
+            "type": "select",
+            "parent": "group_property_details",
+            "label": "Property Status",
+            "required": 1,
+            "choices": {
+                "for_sale": "For Sale",
+                "sold": "Sold",
+                "booked": "Booked",
+                "off_plan": "Off Plan"
+            },
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 4
+        },
+        "field_property_type": {
+            "key": "field_property_type",
+            "name": "property_type",
+            "type": "select",
+            "parent": "group_property_details",
+            "label": "Property Type",
+            "required": 1,
+            "choices": {
+                "house": "House",
+                "villa": "Villa",
+                "apartment": "Apartment",
+                "flat": "Flat",
+                "commercial_building": "Commercial Building",
+                "commercial_space": "Commercial Space",
+                "plot": "Plot",
+                "agricultural_land": "Agricultural Land"
+            },
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 5
+        },
+        "field_property_price": {
+            "key": "field_property_price",
+            "name": "property_price",
+            "type": "number",
+            "parent": "group_property_details",
+            "label": "Property Price (INR)",
+            "required": 1,
+            "min": 0,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 6
+        },
+        "field_property_price_label": {
+            "key": "field_property_price_label",
+            "name": "property_price_label",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Price Label",
+            "placeholder": "e.g. ₹ 85 Lakhs",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 7
+        },
+        "accordion_basic_description": {
+            "key": "accordion_basic_description",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Description",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 8
+        },
+        "field_property_description": {
+            "key": "field_property_description",
+            "name": "property_description",
+            "type": "wysiwyg",
+            "parent": "group_property_details",
+            "label": "Property Description",
+            "required": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0,
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 9
+        },
+        "accordion_basic_end": {
+            "key": "accordion_basic_end",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "endpoint": 1,
+            "menu_order": 10
+        },
+        "tab_location_details": {
+            "key": "tab_location_details",
+            "name": "",
+            "type": "tab",
+            "parent": "group_property_details",
+            "label": "<span class=\"dashicons dashicons-location-alt\"></span> Location Details",
+            "menu_order": 11
+        },
+        "accordion_location_cascade": {
+            "key": "accordion_location_cascade",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Regional Dropdowns",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 12
+        },
+        "field_property_state": {
+            "key": "field_property_state",
+            "name": "property_state",
+            "type": "post_object",
+            "parent": "group_property_details",
+            "label": "State",
+            "post_type": [
+                "state"
+            ],
+            "required": 1,
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 13
+        },
+        "field_property_district": {
+            "key": "field_property_district",
+            "name": "property_district",
+            "type": "post_object",
+            "parent": "group_property_details",
+            "label": "District",
+            "post_type": [
+                "district"
+            ],
+            "required": 1,
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 14
+        },
+        "field_property_taluk": {
+            "key": "field_property_taluk",
+            "name": "property_taluk",
+            "type": "post_object",
+            "parent": "group_property_details",
+            "label": "Taluk",
+            "post_type": [
+                "taluk"
+            ],
+            "required": 1,
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 15
+        },
+        "field_property_place": {
+            "key": "field_property_place",
+            "name": "property_place",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Location",
+            "required": 1,
+            "placeholder": "e.g. Kottakkal",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 16
+        },
+        "accordion_location_address": {
+            "key": "accordion_location_address",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Address & Coordinates",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 17
+        },
+        "field_property_address_1": {
+            "key": "field_property_address_1",
+            "name": "property_address_1",
+            "type": "textarea",
+            "parent": "group_property_details",
+            "label": "Full Address",
+            "required": 1,
+            "rows": 3,
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 18
+        },
+        "field_property_landmark": {
+            "key": "field_property_landmark",
+            "name": "property_landmark",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Landmark",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 19
+        },
+        "field_property_pincode": {
+            "key": "field_property_pincode",
+            "name": "property_pincode",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Pincode",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 20
+        },
+        "field_property_map_url": {
+            "key": "field_property_map_url",
+            "name": "property_map_url",
+            "type": "url",
+            "parent": "group_property_details",
+            "label": "Google Map URL",
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 21
+        },
+        "field_property_latitude": {
+            "key": "field_property_latitude",
+            "name": "property_latitude",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Latitude",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 22
+        },
+        "field_property_longitude": {
+            "key": "field_property_longitude",
+            "name": "property_longitude",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Longitude",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 23
+        },
+        "accordion_location_end": {
+            "key": "accordion_location_end",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "endpoint": 1,
+            "menu_order": 24
+        },
+        "tab_property_specs": {
+            "key": "tab_property_specs",
+            "name": "",
+            "type": "tab",
+            "parent": "group_property_details",
+            "label": "<span class=\"dashicons dashicons-forms\"></span> Property Details",
+            "menu_order": 25
+        },
+        "accordion_specs_layout": {
+            "key": "accordion_specs_layout",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Dimensions & Layout",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 26
+        },
+        "field_property_total_area": {
+            "key": "field_property_total_area",
+            "name": "property_area",
+            "type": "number",
+            "parent": "group_property_details",
+            "label": "Property Area",
+            "required": 1,
+            "min": 0,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 27
+        },
+        "field_property_area_unit": {
+            "key": "field_property_area_unit",
+            "name": "property_area_unit",
+            "type": "select",
+            "parent": "group_property_details",
+            "label": "Area Unit",
+            "required": 1,
+            "choices": {
+                "sq_ft": "Sq Ft",
+                "cent": "Cent",
+                "acre": "Acre"
+            },
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 28
+        },
+        "field_property_bedrooms": {
+            "key": "field_property_bedrooms",
+            "name": "property_bedrooms",
+            "type": "number",
+            "parent": "group_property_details",
+            "label": "Bedrooms",
+            "min": 0,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 29
+        },
+        "field_property_bathrooms": {
+            "key": "field_property_bathrooms",
+            "name": "property_bathrooms",
+            "type": "number",
+            "parent": "group_property_details",
+            "label": "Bathrooms",
+            "min": 0,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 30
+        },
+        "accordion_specs_details": {
+            "key": "accordion_specs_details",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Additional Details",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 31
+        },
+        "field_property_total_floors": {
+            "key": "field_property_total_floors",
+            "name": "property_total_floors",
+            "type": "number",
+            "parent": "group_property_details",
+            "label": "Floors",
+            "min": 0,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 32
+        },
+        "field_property_parking": {
+            "key": "field_property_parking",
+            "name": "property_parking",
+            "type": "select",
+            "parent": "group_property_details",
+            "label": "Parking",
+            "required": 1,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 33
+        },
+        "field_property_parking_count": {
+            "key": "field_property_parking_count",
+            "name": "property_parking_count",
+            "type": "number",
+            "parent": "group_property_details",
+            "label": "Parking Count",
+            "min": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_property_parking",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 34
+        },
+        "field_property_furnishing": {
+            "key": "field_property_furnishing",
+            "name": "property_furnishing",
+            "type": "select",
+            "parent": "group_property_details",
+            "label": "Furnished Status",
+            "required": 1,
+            "choices": {
+                "fully_furnished": "Fully Furnished",
+                "semi_furnished": "Semi Furnished",
+                "unfurnished": "Unfurnished"
+            },
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 35
+        },
+        "field_property_age": {
+            "key": "field_property_age",
+            "name": "property_age",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Property Age",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 36
+        },
+        "field_property_road_access": {
+            "key": "field_property_road_access",
+            "name": "property_road_access",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Road Access",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 37
+        },
+        "accordion_specs_end": {
+            "key": "accordion_specs_end",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "endpoint": 1,
+            "menu_order": 38
+        },
+        "tab_property_features": {
+            "key": "tab_property_features",
+            "name": "",
+            "type": "tab",
+            "parent": "group_property_details",
+            "label": "<span class=\"dashicons dashicons-star-filled\"></span> Amenities",
+            "menu_order": 39
+        },
+        "accordion_features_checklist": {
+            "key": "accordion_features_checklist",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Select Amenities",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 40
+        },
+        "field_property_features": {
+            "key": "field_property_features",
+            "name": "property_features",
+            "type": "checkbox",
+            "parent": "group_property_details",
+            "label": "Amenities Options",
+            "choices": {
+                "water_connection": "Water Connection",
+                "electricity": "Electricity",
+                "compound_wall": "Compound Wall",
+                "well_water": "Well Water",
+                "swimming_pool": "Swimming Pool",
+                "lift": "Lift",
+                "cctv": "CCTV",
+                "security": "Security",
+                "garden": "Garden",
+                "gym": "Gym",
+                "kids_play_area": "Kids Play Area",
+                "car_parking": "Car Parking"
+            },
+            "layout": "vertical",
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 41
+        },
+        "accordion_features_end": {
+            "key": "accordion_features_end",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "endpoint": 1,
+            "menu_order": 42
+        },
+        "tab_property_media": {
+            "key": "tab_property_media",
+            "name": "",
+            "type": "tab",
+            "parent": "group_property_details",
+            "label": "<span class=\"dashicons dashicons-format-gallery\"></span> Images & Documents",
+            "menu_order": 43
+        },
+        "accordion_media_visuals": {
+            "key": "accordion_media_visuals",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Visuals",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 44
+        },
+        "field_property_featured_image": {
+            "key": "field_property_featured_image",
+            "name": "featured_image",
+            "type": "image",
+            "parent": "group_property_details",
+            "label": "Featured Image",
+            "required": 1,
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "max_size": "20MB",
+            "mime_types": "jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 45
+        },
+        "field_property_gallery": {
+            "key": "field_property_gallery",
+            "name": "property_gallery",
+            "type": "gallery",
+            "parent": "group_property_details",
+            "label": "Property Gallery",
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "insert": "append",
+            "library": "all",
+            "max_size": "20MB",
+            "mime_types": "jpg,jpeg,png",
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 46
+        },
+        "field_property_video_url": {
+            "key": "field_property_video_url",
+            "name": "property_video_url",
+            "type": "url",
+            "parent": "group_property_details",
+            "label": "Property Video URL",
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 47
+        },
+        "accordion_media_docs": {
+            "key": "accordion_media_docs",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "PDFs & Links",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 48
+        },
+        "field_property_brochure_pdf": {
+            "key": "field_property_brochure_pdf",
+            "name": "property_brochure_pdf",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Property Brochure PDF",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 49
+        },
+        "field_property_approval_certificate": {
+            "key": "field_property_approval_certificate",
+            "name": "property_approval_certificate",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Property Approval Certificate",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 50
+        },
+        "field_property_land_tax_receipt": {
+            "key": "field_property_land_tax_receipt",
+            "name": "property_land_tax_receipt",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Land Tax Receipt",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 51
+        },
+        "field_property_ownership_document": {
+            "key": "field_property_ownership_document",
+            "name": "property_ownership_document",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Ownership Document",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 52
+        },
+        "field_property_survey_document": {
+            "key": "field_property_survey_document",
+            "name": "property_survey_document",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Survey Document",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 53
+        },
+        "field_property_building_permit": {
+            "key": "field_property_building_permit",
+            "name": "property_building_permit",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Building Permit",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 54
+        },
+        "field_property_floor_plan_pdf": {
+            "key": "field_property_floor_plan_pdf",
+            "name": "property_floor_plan_pdf",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Floor Plan PDF",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 55
+        },
+        "field_property_other_attachments": {
+            "key": "field_property_other_attachments",
+            "name": "property_other_attachments",
+            "type": "file",
+            "parent": "group_property_details",
+            "label": "Other Attachments",
+            "return_format": "array",
+            "max_size": "20MB",
+            "mime_types": "pdf,doc,docx,jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 56
+        },
+        "accordion_media_end": {
+            "key": "accordion_media_end",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "endpoint": 1,
+            "menu_order": 57
+        },
+        "tab_agent_info": {
+            "key": "tab_agent_info",
+            "name": "",
+            "type": "tab",
+            "parent": "group_property_details",
+            "label": "<span class=\"dashicons dashicons-admin-users\"></span> Agent Details",
+            "menu_order": 58
+        },
+        "accordion_agent_info": {
+            "key": "accordion_agent_info",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Contact Information",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 59
+        },
+        "field_agent_name": {
+            "key": "field_agent_name",
+            "name": "agent_name",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Agent Name",
+            "required": 1,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 60
+        },
+        "field_agent_phone": {
+            "key": "field_agent_phone",
+            "name": "agent_phone",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Mobile Number",
+            "required": 1,
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 61
+        },
+        "field_agent_whatsapp": {
+            "key": "field_agent_whatsapp",
+            "name": "agent_whatsapp",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "WhatsApp Number",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 62
+        },
+        "field_agent_email": {
+            "key": "field_agent_email",
+            "name": "agent_email",
+            "type": "email",
+            "parent": "group_property_details",
+            "label": "Email Address",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 63
+        },
+        "field_agent_photo": {
+            "key": "field_agent_photo",
+            "name": "agent_photo",
+            "type": "image",
+            "parent": "group_property_details",
+            "label": "Agent Photo",
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "max_size": "20MB",
+            "mime_types": "jpg,jpeg,png",
+            "wrapper": {
+                "width": "50"
+            },
+            "menu_order": 64
+        },
+        "accordion_agent_end": {
+            "key": "accordion_agent_end",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "endpoint": 1,
+            "menu_order": 65
+        },
+        "tab_seo_fields": {
+            "key": "tab_seo_fields",
+            "name": "",
+            "type": "tab",
+            "parent": "group_property_details",
+            "label": "<span class=\"dashicons dashicons-search\"></span> SEO",
+            "menu_order": 66
+        },
+        "accordion_seo_fields": {
+            "key": "accordion_seo_fields",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "label": "Search Metadata",
+            "open": 1,
+            "multi_expand": 1,
+            "menu_order": 67
+        },
+        "field_seo_meta_title": {
+            "key": "field_seo_meta_title",
+            "name": "seo_meta_title",
+            "type": "text",
+            "parent": "group_property_details",
+            "label": "Meta Title",
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 68
+        },
+        "field_seo_meta_description": {
+            "key": "field_seo_meta_description",
+            "name": "seo_meta_description",
+            "type": "textarea",
+            "parent": "group_property_details",
+            "label": "Meta Description",
+            "rows": 3,
+            "wrapper": {
+                "width": "100"
+            },
+            "menu_order": 69
+        },
+        "accordion_seo_end": {
+            "key": "accordion_seo_end",
+            "name": "",
+            "type": "accordion",
+            "parent": "group_property_details",
+            "endpoint": 1,
+            "menu_order": 70
+        }
+    },
+    "modified": 1781288975
+}

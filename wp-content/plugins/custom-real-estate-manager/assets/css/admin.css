@@ -1,0 +1,381 @@
+/**
+ * Admin styling for Real Estate Management System
+ */
+
+/* Style the auto-generated Property ID to look clearly read-only and distinct */
+#acf-group_property_details input[readonly] {
+	background-color: #f8fafc;
+	border-color: #cbd5e1;
+	color: #64748b;
+	cursor: not-allowed;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	box-shadow: none;
+}
+
+/* Radio button list improvements for Property Status taxonomy box (if used) */
+#property_statusdiv .categorychecklist li {
+	margin-bottom: 6px;
+}
+
+#property_statusdiv .categorychecklist input[type="radio"] {
+	margin-top: 1px;
+	margin-right: 6px;
+}
+
+/* --- Required Fields Validation Highlight --- */
+.acf-field[data-required="1"] > .acf-label label .acf-required {
+	color: #ef4444 !important;
+	font-weight: bold;
+	margin-left: 3px;
+	font-size: 14px;
+}
+
+/* --- Premium ACF Tabs Styling --- */
+.acf-tab-group {
+	border-bottom: 2px solid #e2e8f0 !important;
+	padding-left: 0 !important;
+	margin-bottom: 25px !important;
+	margin-top: 10px !important;
+	background: #f8fafc !important;
+	border-radius: 6px 6px 0 0 !important;
+}
+
+.acf-tab-group li {
+	margin: 0 4px 0 0 !important;
+}
+
+.acf-tab-group li a {
+	background: transparent !important;
+	border: none !important;
+	padding: 12px 20px !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	color: #64748b !important;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 6px 6px 0 0 !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 8px !important;
+	box-shadow: none !important;
+}
+
+.acf-tab-group li a:hover {
+	color: #1e293b !important;
+	background: #f1f5f9 !important;
+}
+
+.acf-tab-group li.active a {
+	color: #2563eb !important;
+	border-bottom: 3px solid #2563eb !important;
+	background: #ffffff !important;
+	padding-bottom: 9px !important;
+}
+
+.acf-tab-group li a .dashicons {
+	font-size: 18px !important;
+	width: 18px !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	color: #94a3b8 !important;
+	transition: transform 0.2s ease;
+}
+
+.acf-tab-group li.active a .dashicons {
+	transform: scale(1.1);
+	color: #2563eb !important;
+}
+
+/* --- Premium ACF Accordion Styling --- */
+.acf-fields > .acf-field-accordion {
+	border: 1px solid #e2e8f0 !important;
+	background: #f8fafc !important;
+	border-radius: 8px !important;
+	margin-bottom: 18px !important;
+	overflow: hidden !important;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.acf-fields > .acf-field-accordion .acf-accordion-title {
+	padding: 14px 18px !important;
+	background: #ffffff !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	color: #1e293b !important;
+	border-bottom: 1px solid #e2e8f0 !important;
+	display: flex !important;
+	align-items: center !important;
+	gap: 10px !important;
+	cursor: pointer !important;
+	transition: background 0.2s ease !important;
+}
+
+.acf-fields > .acf-field-accordion .acf-accordion-title:hover {
+	background: #f8fafc !important;
+}
+
+.acf-fields > .acf-field-accordion .acf-accordion-title .dashicons {
+	color: #64748b !important;
+	font-size: 18px !important;
+	width: 18px !important;
+	height: 18px !important;
+	line-height: 18px !important;
+}
+
+.acf-fields > .acf-field-accordion .acf-accordion-content {
+	padding: 20px !important;
+	background: #ffffff !important;
+}
+
+.acf-fields > .acf-field-accordion .acf-accordion-icon {
+	margin-left: auto !important;
+	color: #94a3b8 !important;
+	transition: transform 0.2s ease !important;
+}
+
+.acf-fields > .acf-field-accordion.open .acf-accordion-icon {
+	transform: rotate(90deg) !important;
+}
+
+/* --- Background Auto-Save Toast Notification --- */
+#rem-autosave-status {
+	display: none;
+	align-items: center;
+	gap: 6px;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 3px 8px;
+	border-radius: 4px;
+	margin-left: 15px;
+	vertical-align: middle;
+	line-height: 1.2;
+}
+
+#rem-autosave-status.saving {
+	background-color: #fef3c7;
+	color: #d97706;
+	border: 1px solid #fde68a;
+}
+
+#rem-autosave-status.success {
+	background-color: #dcfce7;
+	color: #15803d;
+	border: 1px solid #bbf7d0;
+}
+
+#rem-autosave-status.error {
+	background-color: #fee2e2;
+	color: #b91c1c;
+	border: 1px solid #fca5a5;
+}
+
+#rem-autosave-status .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+}
+
+.rem-spinner-icon {
+	width: 10px;
+	height: 10px;
+	border: 2px solid #d97706;
+	border-top: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	animation: rem-spin 0.8s linear infinite;
+}
+
+@keyframes rem-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 782px) {
+	.acf-fields > .acf-field {
+		width: 100% !important;
+		clear: both !important;
+	}
+	
+	.acf-tab-group {
+		display: flex !important;
+		flex-wrap: nowrap !important;
+		overflow-x: auto !important;
+		-webkit-overflow-scrolling: touch !important;
+	}
+	
+	.acf-tab-group li {
+		flex: 0 0 auto !important;
+	}
+	
+	.acf-tab-group li a {
+		padding: 10px 14px !important;
+		font-size: 12px !important;
+	}
+	
+	.acf-fields > .acf-field-accordion .acf-accordion-content {
+		padding: 15px !important;
+	}
+}
+
+/* --- Dynamic Accordion Icons via CSS --- */
+.acf-fields > .acf-field-accordion .acf-accordion-title::before {
+	font-family: dashicons;
+	font-size: 18px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #64748b;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Tab 1: Basic Information */
+.acf-fields > .acf-field-accordion[data-key="accordion_basic_info"] .acf-accordion-title::before {
+	content: "\f348"; /* dashicons-info */
+}
+.acf-fields > .acf-field-accordion[data-key="accordion_basic_description"] .acf-accordion-title::before {
+	content: "\f472"; /* dashicons-editor-justify */
+}
+
+/* Tab 2: Location Details */
+.acf-fields > .acf-field-accordion[data-key="accordion_location_cascade"] .acf-accordion-title::before {
+	content: "\f507"; /* dashicons-networking */
+}
+.acf-fields > .acf-field-accordion[data-key="accordion_location_address"] .acf-accordion-title::before {
+	content: "\f230"; /* dashicons-map */
+}
+
+/* Tab 3: Property Specifications */
+.acf-fields > .acf-field-accordion[data-key="accordion_specs_layout"] .acf-accordion-title::before {
+	content: "\f538"; /* dashicons-layout */
+}
+.acf-fields > .acf-field-accordion[data-key="accordion_specs_details"] .acf-accordion-title::before {
+	content: "\f100"; /* dashicons-admin-appearance */
+}
+
+/* Tab 4: Features */
+.acf-fields > .acf-field-accordion[data-key="accordion_features_checklist"] .acf-accordion-title::before {
+	content: "\f147"; /* dashicons-yes-alt */
+}
+
+/* Tab 5: Media */
+.acf-fields > .acf-field-accordion[data-key="accordion_media_visuals"] .acf-accordion-title::before {
+	content: "\f233"; /* dashicons-images-alt2 */
+}
+.acf-fields > .acf-field-accordion[data-key="accordion_media_docs"] .acf-accordion-title::before {
+	content: "\f497"; /* dashicons-media-document */
+}
+
+/* Tab 6: Agent Details */
+.acf-fields > .acf-field-accordion[data-key="accordion_agent_info"] .acf-accordion-title::before {
+	content: "\f338"; /* dashicons-businessman */
+}
+
+/* Tab 7: SEO */
+.acf-fields > .acf-field-accordion[data-key="accordion_seo_fields"] .acf-accordion-title::before {
+	content: "\f108"; /* dashicons-google */
+}
+
+/* --- Validation Error Tabs Highlight --- */
+.acf-tab-group li.rem-tab-error a {
+	color: #ef4444 !important;
+	border-bottom: 3px solid #ef4444 !important;
+}
+
+.acf-tab-group li.rem-tab-error a .dashicons {
+	color: #ef4444 !important;
+}
+
+.acf-tab-group li.rem-tab-error a .rem-error-dot {
+	color: #ef4444;
+	font-size: 14px;
+	margin-left: 5px;
+	vertical-align: middle;
+	font-weight: bold;
+	animation: rem-pulse 1.5s infinite;
+}
+
+@keyframes rem-pulse {
+	0% { opacity: 0.4; }
+	50% { opacity: 1; }
+	100% { opacity: 0.4; }
+}
+
+/* --- Notification System Style Overrides --- */
+.rem-admin-bell-badge {
+	background-color: #ef4444;
+	color: #ffffff;
+	border-radius: 50%;
+	padding: 2px 6px;
+	font-size: 9px;
+	font-weight: bold;
+	margin-left: 5px;
+	line-height: 1;
+	display: inline-block;
+}
+
+.rem-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(15, 23, 42, 0.6);
+	backdrop-filter: blur(4px);
+	z-index: 999999;
+	align-items: center;
+	justify-content: center;
+}
+
+.rem-modal-content {
+	background: #ffffff;
+	padding: 28px;
+	border-radius: 12px;
+	width: 90%;
+	max-width: 480px;
+	position: relative;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	border: 1px solid #e2e8f0;
+}
+
+.rem-modal-close {
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #94a3b8;
+	cursor: pointer;
+	line-height: 1;
+	transition: color 0.2s;
+}
+
+.rem-modal-close:hover {
+	color: #ef4444;
+}
+
+.rem-notifications-dropdown {
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	border: 1px solid #e2e8f0;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.rem-notification-item:hover {
+	background-color: rgba(219, 39, 119, 0.06) !important;
+}
+
+.rem-btn-success:hover {
+	background-color: #166534 !important;
+}
+
+.rem-btn-danger:hover {
+	background-color: #991b1b !important;
+}
+
+
