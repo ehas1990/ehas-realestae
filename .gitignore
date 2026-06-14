@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+error_log
+
+# WordPress temp and upgrade folders
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
