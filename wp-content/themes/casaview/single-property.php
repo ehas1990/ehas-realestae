@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Single Property Template Page - Fully Redesigned & Premium
  */
@@ -357,7 +357,7 @@ if ( empty( $bottom_properties ) ) {
 		letter-spacing: 0.5px;
 	}
 	.badge-status {
-		background: #FCB71C;
+		background: var(--primary-color);
 		color: #fff;
 		font-size: 12px;
 		font-weight: 700;
@@ -1174,7 +1174,7 @@ if ( empty( $bottom_properties ) ) {
 		transform: translateY(-3px);
 	}
 	.property-badge-type.badge-sale {
-		background: #FCB71C !important;
+		background: var(--primary-color) !important;
 	}
 	.property-badge-type.badge-rent {
 		background: #1C1D21 !important;
@@ -1777,7 +1777,7 @@ if ( empty( $bottom_properties ) ) {
 		color: #ffffff !important;
 	}
 	.district-section-wrapper .status-property-label.badge-sale {
-		background: #FCB71C !important;
+		background: var(--primary-color) !important;
 		color: #1C1D21 !important;
 	}
 	.district-section-wrapper .btn-action-circle {
@@ -2899,3 +2899,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <?php 
 get_footer();
+

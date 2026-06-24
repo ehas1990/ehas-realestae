@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * PRWorks Real Estate Theme Settings Page
  * Manages Global Default Currency and Single Property Page Drag-and-Drop Layout
@@ -67,8 +67,8 @@ function casaview_render_theme_settings_page() {
 		$primary_color = sanitize_hex_color( $_POST['casaview_primary_color'] ?? '#c5a880' );
 		$secondary_color = sanitize_hex_color( $_POST['casaview_secondary_color'] ?? '#f4f5f8' );
 		$button_color = sanitize_hex_color( $_POST['casaview_button_color'] ?? '#FCB71C' );
-		$button_hover_color = sanitize_hex_color( $_POST['casaview_button_hover_color'] ?? '#e05a36' );
-		$secondary_button_color = sanitize_hex_color( $_POST['casaview_secondary_button_color'] ?? '#e05a36' );
+		$button_hover_color = sanitize_hex_color( $_POST['casaview_button_hover_color'] ?? '#000000' );
+		$secondary_button_color = sanitize_hex_color( $_POST['casaview_secondary_button_color'] ?? '#000000' );
 
 		update_option( 'casaview_font_type', $font_type );
 		update_option( 'casaview_theme_font', $theme_font );
@@ -181,8 +181,8 @@ function casaview_render_theme_settings_page() {
 	$primary_color = get_option( 'casaview_primary_color', '#c5a880' );
 	$secondary_color = get_option( 'casaview_secondary_color', '#f4f5f8' );
 	$button_color = get_option( 'casaview_button_color', '#FCB71C' );
-	$button_hover_color = get_option( 'casaview_button_hover_color', '#e05a36' );
-	$secondary_button_color = get_option( 'casaview_secondary_button_color', '#e05a36' );
+	$button_hover_color = get_option( 'casaview_button_hover_color', '#000000' );
+	$secondary_button_color = get_option( 'casaview_secondary_button_color', '#000000' );
 
 	$layout_settings = get_option( 'casaview_layout_settings' );
 	if ( ! is_array( $layout_settings ) || empty( $layout_settings ) ) {
@@ -733,3 +733,4 @@ function casaview_render_theme_settings_page() {
 	</script>
 	<?php
 }
+

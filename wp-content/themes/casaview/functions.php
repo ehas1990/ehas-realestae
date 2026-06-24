@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * PRWorks Real Estate Theme functions and definitions
  */
@@ -7019,8 +7019,8 @@ function casaview_output_dynamic_styles() {
 	$primary = get_option( 'casaview_primary_color', '#c5a880' );
 	$secondary = get_option( 'casaview_secondary_color', '#f4f5f8' );
 	$btn_bg = get_option( 'casaview_button_color', '#FCB71C' );
-	$btn_hover = get_option( 'casaview_button_hover_color', '#e05a36' );
-	$secondary_btn = get_option( 'casaview_secondary_button_color', '#e05a36' );
+	$btn_hover = get_option( 'casaview_button_hover_color', '#000000' );
+	$secondary_btn = get_option( 'casaview_secondary_button_color', '#000000' );
 
 	$font_family = '';
 	if ( $font_type === 'custom' && ! empty( $custom_font_url ) ) {
@@ -7127,4 +7127,5 @@ function casaview_output_dynamic_styles() {
 	<?php
 }
 add_action( 'wp_head', 'casaview_output_dynamic_styles', 100 );
+
 

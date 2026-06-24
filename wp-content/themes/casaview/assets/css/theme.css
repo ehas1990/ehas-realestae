@@ -1,4 +1,4 @@
-/* Casa View Luxury Design System stylesheet */
+﻿/* Casa View Luxury Design System stylesheet */
 
 :root {
   /* Color Palette */
@@ -6,7 +6,7 @@
   --bg-secondary: #f4f5f8;
   --bg-tertiary: #ffffff;
   --primary-color: #c5a880;
-  --secondary-color: #e05a36;
+  --secondary-color: #000000;
   --accent-gold: var(--primary-color);
   --accent-gold-hover: var(--secondary-color);
   --text-white: #1c1d21;
@@ -963,7 +963,7 @@ a {
 }
 
 .property-badge-type.badge-sale {
-  background: #FCB71C !important;
+  background: var(--primary-color) !important;
 }
 
 .property-badge-type.badge-rent {
@@ -1510,7 +1510,7 @@ a {
 }
 
 .featured-slide-card .property-badge-type {
-  background: #fcb71c !important;
+  background: var(--primary-color) !important;
   color: #ffffff !important;
   padding: 6px 12px !important;
   font-size: 11px !important;
@@ -2347,7 +2347,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #e05a36;
+  background: var(--secondary-color);
   color: #ffffff !important;
   font-family: var(--font-en), sans-serif;
   font-size: 14px;
@@ -2362,7 +2362,7 @@ a {
 .hp-faq-card-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px rgba(255, 107, 53, 0.25);
-  background: #e05a36;
+  background: var(--secondary-color);
 }
 
 .hp-faq-desc-new {
@@ -2544,7 +2544,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #FCB71C;
+  background: var(--primary-color);
   color: #ffffff !important;
   font-family: var(--font-en), sans-serif;
   font-size: 15px;
@@ -2559,7 +2559,7 @@ a {
 .hp-contact-cta__btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px rgba(255, 107, 53, 0.25);
-  background: #e05a36;
+  background: var(--secondary-color);
 }
 
 /* ==========================================================================
@@ -2853,7 +2853,7 @@ a {
 }
 
 .trending-projects-tab-btn.active {
-  background: #FCB71C;
+  background: var(--primary-color);
   color: #FFFFFF;
   box-shadow: 0 10px 25px rgba(255, 107, 53, 0.25);
 }
@@ -2911,9 +2911,9 @@ a {
 }
 
 .trending-projects-arrow:hover {
-  background: #FCB71C;
+  background: var(--primary-color);
   color: #FFFFFF;
-  border-color: #FCB71C;
+  border-color: var(--primary-color);
   box-shadow: 0 10px 20px rgba(255, 107, 53, 0.25);
   transform: translateY(-50%) scale(1.05);
 }
@@ -2955,7 +2955,7 @@ a {
 }
 
 .trending-projects-slider-wrapper .swiper-pagination-bullet-active {
-  background: #FCB71C;
+  background: var(--primary-color);
   opacity: 1;
   width: 20px;
   border-radius: 4px;
@@ -3163,7 +3163,7 @@ a {
 }
 
 .our-services-button {
-  background: #FCB71C;
+  background: var(--primary-color);
   color: #FFFFFF !important;
   padding: 16px 28px;
   border-radius: 10px;
@@ -3272,7 +3272,7 @@ a {
 
 /* Featured Properties View All Button style */
 .featured-properties-view-all {
-  background-color: #FCB71C !important;
+  background-color: var(--primary-color) !important;
   color: #FFFFFF !important;
   padding: 16px 32px !important;
   border-radius: 10px !important;
@@ -3583,7 +3583,7 @@ a {
 }
 
 .our-services-button {
-  background: #FCB71C !important;
+  background: var(--primary-color) !important;
   color: #FFFFFF !important;
   padding: 16px 28px !important;
   border-radius: 10px !important;
@@ -3870,7 +3870,7 @@ a {
   width: 56px !important;
   height: 56px !important;
   min-width: 56px !important;
-  background: #FCB71C !important;
+  background: var(--primary-color) !important;
   color: #FFFFFF !important;
   border-radius: 12px !important;
   border: none !important;
@@ -3884,7 +3884,7 @@ a {
 .hero-filter-search:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0 10px 25px rgba(255, 107, 53, 0.25) !important;
-  background: #e05a36 !important;
+  background: var(--secondary-color) !important;
 }
 .hero-filter-search svg {
   width: 20px !important;
@@ -3956,7 +3956,7 @@ a {
 
 /* ── About CTA Button ─────────────────────────────────── */
 .about-cta-btn {
-    background: #FCB71C;
+    background: var(--primary-color);
     color: #ffffff;
     padding: 16px 45px;
     font-size: 15px;
@@ -3990,7 +3990,7 @@ a {
 
 /* ── Form Submit Button ───────────────────────────────── */
 .form-submit-btn, .wpcf7-form input[type="submit"] {
-    background: #FCB71C !important;
+    background: var(--primary-color) !important;
     color: #ffffff !important;
     font-weight: 600 !important;
     font-size: 14px !important;
@@ -4067,6 +4067,8 @@ a {
     text-align: left !important;
   }
 }
+
+
 
 
 
