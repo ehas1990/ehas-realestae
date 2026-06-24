@@ -1,4 +1,4 @@
-﻿/* Casa View Luxury Design System stylesheet */
+/* Casa View Luxury Design System stylesheet */
 
 :root {
   /* Color Palette */
@@ -1563,9 +1563,11 @@ a {
   font-weight: 600 !important;
   line-height: 1.4 !important;
   margin-bottom: 0 !important;
-  height: auto !important;
-  min-height: auto !important;
-  white-space: nowrap !important;
+  height: 50px !important;
+  white-space: normal !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
 }
